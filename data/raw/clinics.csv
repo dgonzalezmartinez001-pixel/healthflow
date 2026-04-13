@@ -1,0 +1,11 @@
+clinic_id,name,city,address,phone,director_name,opened_date,is_active
+CLIN-001,Clínica HealthFlow Barcelona 1,Barcelona,"Calle de Gracia Vara 49 Piso 7 , Guipúzcoa, 29703",+34 821 432 178,Celia Suarez Moreno,2009-05-15,True
+CLIN-002,Clínica HealthFlow Barcelona 2,Barcelona,"Glorieta de Bernardino Ropero 44 Apt. 95 , La Coruña, 25856",+34 878 616 607,Juanito Busquets,2013-01-17,True
+CLIN-003,Clínica HealthFlow Barcelona 3,Barcelona,"Acceso de Agapito Juárez 720, Cuenca, 05308",+34845659727,Esperanza Escudero,2006-02-02,True
+CLIN-004,Clínica HealthFlow Valencia 4,Valencia,"Calle Coral Oliva 871, Soria, 12719",+34 873872124,Florina Bauzà Barreda,2016-04-17,True
+CLIN-005,Clínica HealthFlow Madrid 5,Madrid,"Glorieta León Morán 5 Apt. 47 , Las Palmas, 08352",+34 985 53 14 2,Maximiliano Prats Segarra,2018-07-03,True
+CLIN-006,Clínica HealthFlow Madrid 6,Madrid,"Callejón Adriana Ferrán 698 Piso 0 , Girona, 23645",+34 928660381,Candelario Carreño,2011-06-22,True
+CLIN-007,Clínica HealthFlow Barcelona 7,Barcelona,"Acceso Amado Salvà 95 Puerta 8 , Barcelona, 31041",+34 920444363,Emma Arjona Hoyos,2020-07-13,False
+CLIN-008,Clínica HealthFlow Sevilla 8,Sevilla,"Pasaje de Griselda Aznar 48 Apt. 79 , Álava, 27988",+34 973 492 700,Marciano Carrión-Boix,2009-10-06,True
+CLIN-009,Clínica HealthFlow Madrid 9,Madrid,"Vial Adora Rincón 5 Apt. 35 , Segovia, 35842",+34 825 33 22 9,Bernardita Arellano Fajardo,2014-10-28,True
+CLIN-010,Clínica HealthFlow Madrid 10,Madrid,"Alameda Valeria Verdugo 89, Baleares, 08240",+34800 79 99 91,Heriberto Cañete-Barreda,2010-09-22,True

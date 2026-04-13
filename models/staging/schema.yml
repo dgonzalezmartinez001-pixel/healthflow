@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: stg_clinics
+    columns:
+      - name: clinic_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_doctors
+    columns:
+      - name: doctor_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_patients
+    columns:
+      - name: patient_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_treatments_catalog
+    columns:
+      - name: treatment_code
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_appointments
+    columns:
+      - name: appointment_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_appointment_treatments
+    columns:
+      - name: appointment_treatment_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_billing
+    columns:
+      - name: billing_id
+        tests:
+          - unique
+          - not_null

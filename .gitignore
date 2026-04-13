@@ -1,0 +1,13 @@
+#Esto le dice a Git: "Ignora estas carpetas, solo quiero subir mis modelos .sql y mis scripts .py"
+
+# Archivos de dbt
+target/
+dbt_packages/
+logs/
+
+# Base de datos DuckDB (el Miembro 2 la generará con tus scripts)
+*.duckdb
+
+# Archivos de Python/Jupyter
+__pycache__/
+.ipynb_checkpoints/

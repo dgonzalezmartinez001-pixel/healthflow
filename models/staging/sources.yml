@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: clinics
+      - name: doctors
+      - name: patients
+      - name: treatments_catalog
+      - name: appointments
+      - name: appointment_treatments
+      - name: billing

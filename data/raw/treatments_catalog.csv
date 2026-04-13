@@ -1,0 +1,59 @@
+treatment_code,treatment_name,specialty,base_price,duration_minutes,is_active
+TRT-001,Consulta general,MEDICINA_GENERAL,512.56,60,True
+TRT-002,Revisión anual,medicina_general,508.06,60,True
+TRT-003,Valoración preventiva,MEDICINA_GENERAL,562.97,30,True
+TRT-004,Análisis básico,Medicina_General,241.13,30,True
+TRT-005,Control tensión,Medicina_General,578.28,60,True
+TRT-006,Certificado médico,MEDICINA_GENERAL,391.37,30,True
+TRT-007,Vacuna gripe,MEDICINA_GENERAL,791.96,30,True
+TRT-008,Electrocardiograma,CARDIOLOGIA,419.86,30,True
+TRT-009,Ecocardiograma,Cardiologia,787.96,60,True
+TRT-010,Holter 24h,Cardiologia,153.73,30,False
+TRT-011,Prueba esfuerzo,CARDIOLOGIA,569.14,45,True
+TRT-012,Consulta cardiológica,cardiologia,257.36,30,True
+TRT-013,Revisión marcapasos,Cardiologia,179.48,20,True
+TRT-014,Coronariografía,Cardiologia,622.34,45,True
+TRT-015,Monitorización PA,Cardiologia,473.18,45,True
+TRT-016,Consulta dermatológica,DERMATOLOGIA,169.09,45,True
+TRT-017,Extirpación lunar,DERMATOLOGIA,366.68,45,True
+TRT-018,Crioterapia,DERMATOLOGIA,735.46,60,True
+TRT-019,Biopsia cutánea,dermatologia,618.13,30,True
+TRT-020,Peeling químico,DERMATOLOGIA,626.66,90,True
+TRT-021,Dermatoscopia,Dermatologia,109.69,30,False
+TRT-022,Tratamiento acné,Dermatologia,274.72,20,True
+TRT-023,Consulta pediátrica,pediatria,190.54,20,True
+TRT-024,Vacunación,pediatria,567.84,60,True
+TRT-025,Revisión desarrollo,Pediatria,693.63,20,True
+TRT-026,Control peso/talla,pediatria,771.35,30,True
+TRT-027,Análisis pediátrico,Pediatria,215.6,20,True
+TRT-028,Revisión neonatal,pediatria,517.16,30,True
+TRT-029,Test alergia infantil,Pediatria,353.98,60,True
+TRT-030,Consulta traumatológica,TRAUMATOLOGIA,55.48,45,True
+TRT-031,Radiografía articular,Traumatologia,107.76,30,True
+TRT-032,Infiltración,traumatologia,584.61,45,True
+TRT-033,Revisión postquirúrgica,traumatologia,425.23,60,True
+TRT-034,Fisioterapia valoración,TRAUMATOLOGIA,104.64,15,True
+TRT-035,Artroscopia diagnóstica,TRAUMATOLOGIA,638.7,20,True
+TRT-036,Vendaje funcional,Traumatologia,239.08,15,True
+TRT-037,Consulta ginecológica,Ginecologia,236.82,20,True
+TRT-038,Citología,GINECOLOGIA,784.14,60,False
+TRT-039,Ecografía ginecológica,GINECOLOGIA,697.94,90,True
+TRT-040,Revisión mamaria,Ginecologia,268.54,30,False
+TRT-041,Control embarazo,Ginecologia,140.02,30,True
+TRT-042,Colposcopia,Ginecologia,723.21,30,True
+TRT-043,Amniocentesis,ginecologia,419.18,15,True
+TRT-044,Revisión menopausia,Ginecologia,483.73,90,True
+TRT-045,Consulta neurológica,NEUROLOGIA,412.87,30,True
+TRT-046,EEG,Neurologia,318.32,90,True
+TRT-047,EMG,NEUROLOGIA,623.23,60,True
+TRT-048,Valoración cognitiva,Neurologia,630.51,30,True
+TRT-049,Revisión neurológica,Neurologia,279.32,60,True
+TRT-050,Potenciales evocados,NEUROLOGIA,500.64,30,True
+TRT-051,Estudio sueño,NEUROLOGIA,440.67,30,True
+TRT-052,Radiografía simple,RADIOLOGIA,210.65,45,True
+TRT-053,TAC,Radiologia,749.53,45,True
+TRT-054,Resonancia magnética,Radiologia,187.15,30,True
+TRT-055,Ecografía abdominal,Radiologia,540.88,15,True
+TRT-056,Densitometría ósea,radiologia,215.47,15,True
+TRT-057,PET scan,Radiologia,173.26,30,False
+TRT-058,Mamografía,RADIOLOGIA,467.87,45,True
