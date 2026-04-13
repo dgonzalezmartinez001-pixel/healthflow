@@ -1,0 +1,58 @@
+version: 2
+
+models:
+  - name: int_clinics
+    description: "Modelo 3NF - Clínicas"
+    columns:
+      - name: clinic_id
+        tests:
+          - unique
+          - not_null
+
+  - name: int_doctors
+    description: "Modelo 3NF - Doctores"
+    columns:
+      - name: doctor_id
+        tests:
+          - unique
+          - not_null
+
+  - name: int_patients
+    description: "Modelo 3NF - Pacientes"
+    columns:
+      - name: patient_id
+        tests:
+          - unique
+          - not_null
+
+  - name: int_treatments_catalog
+    description: "Modelo 3NF - Catálogo de tratamientos"
+    columns:
+      - name: treatment_code
+        tests:
+          - unique
+          - not_null
+
+  - name: int_appointments
+    description: "Modelo 3NF - Citas"
+    columns:
+      - name: appointment_id
+        tests:
+          - unique
+          - not_null
+
+  - name: int_appointment_treatments
+    description: "Modelo 3NF - Relación cita-tratamiento (M:N)"
+    columns:
+      - name: appointment_treatment_id
+        tests:
+          - unique
+          - not_null
+
+  - name: int_billing
+    description: "Modelo 3NF - Facturación (sin paciente redundante)"
+    columns:
+      - name: billing_id
+        tests:
+          - unique
+          - not_null

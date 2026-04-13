@@ -49,7 +49,12 @@ cleaned as (
         end                                     as clinic_id,
 
         -- Fecha y hora de la cita
-        cast(scheduled_date as date)            as scheduled_date,
+        case
+            when scheduled_date like '%/%'
+                then strptime(trim(scheduled_date), '%d/%m/%Y')::date
+            else
+                cast(scheduled_date as date)
+        end                                     as scheduled_date,
         cast(scheduled_time as time)            as scheduled_time,
 
         -- Estado normalizado a minúsculas

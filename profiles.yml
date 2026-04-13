@@ -1,0 +1,7 @@
+healthflow:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "data/healthflow.duckdb"
+      schema: main

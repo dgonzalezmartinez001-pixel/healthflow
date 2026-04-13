@@ -1,0 +1,14 @@
+[project]
+name = "healthflow-analytics"
+version = "1.0.0"
+description = "HealthFlow Analytics — entorno base para actividad evaluable de máster Data & Analytics"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-duckdb",
+    "duckdb",
+    "pyspark",
+    "faker",
+    "pandas",
+    "numpy",
+]
