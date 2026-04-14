@@ -1,13 +1,14 @@
 {{ config(materialized='table') }}
 
 select
-    at.appointment_id,
-    at.treatment_id,
+    apt_t.appointment_treatment_id,
+    apt_t.appointment_id,
+    apt_t.treatment_code,
     a.patient_id,
     a.doctor_id,
     a.clinic_id,
-    cast(a.appointment_date as date) as date_id,
-    at.actual_price
-from {{ ref('int_appointment_treatments') }} at
+    a.scheduled_date as date_id,
+    apt_t.actual_price
+from {{ ref('int_appointment_treatments') }} apt_t
 left join {{ ref('int_appointments') }} a
-    on at.appointment_id = a.appointment_id
+    on apt_t.appointment_id = a.appointment_id

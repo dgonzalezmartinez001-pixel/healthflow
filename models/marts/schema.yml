@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: dim_appointments
+    description: "Dimensión enriquecida de citas médicas"
+    columns:
+      - name: appointment_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_patient
+    description: "Dimensión de pacientes"
+    columns:
+      - name: patient_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_doctor
+    description: "Dimensión de doctores"
+    columns:
+      - name: doctor_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_clinic
+    description: "Dimensión de clínicas"
+    columns:
+      - name: clinic_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_treatment
+    description: "Dimensión de tratamientos"
+    columns:
+      - name: treatment_code
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_date
+    description: "Dimensión de tiempo"
+    columns:
+      - name: date_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_billing
+    description: "Hechos de facturación financiera"
+    columns:
+      - name: billing_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_appointment_treatments
+    description: "Hechos de tratamientos médicos por cita"
+    columns:
+      - name: appointment_treatment_id
+        tests:
+          - unique
+          - not_null

@@ -1,7 +1,13 @@
 {{ config(materialized='table') }}
 
-select distinct
-    appointment_date as date_id,
-    extract(year from appointment_date) as year,
-    extract(month from appointment_date) as month
-from {{ ref('int_appointments') }}
+select
+    patient_id,
+    first_name || ' ' || last_name as full_name,
+    gender,
+    birth_date,
+    -- Cálculo de edad simplificado
+    date_diff('year', birth_date, current_date) as age,
+    city,
+    insurance_company,
+    registration_date
+from {{ ref('int_patients') }}
