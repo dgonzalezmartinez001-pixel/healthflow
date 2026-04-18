@@ -21,7 +21,7 @@ cleaned as (
 
     select
         -- Identificador del tratamiento
-        treatment_code,
+        treatment_code                          as treatment_id,
 
         -- Nombre descriptivo
         trim(treatment_name)                    as treatment_name,
