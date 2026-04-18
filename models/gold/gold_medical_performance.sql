@@ -15,6 +15,8 @@ SELECT
     -- Métricas
     a.appointment_id,
     a.status, -- Para filtrar por 'Completed'
-    a.appointment_type
+    a.appointment_type,
+    -- Auditoría
+    now() as _updated_at
 FROM {{ ref('dim_appointments') }} a
 LEFT JOIN {{ ref('dim_date') }} d ON a.date_id = d.date_id

@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: gold_financial_analytics
+    description: "Capa final analítica financiera de facturación"
+    columns:
+      - name: billing_id
+        description: "Clave primaria de la factura"
+        tests:
+          - unique
+          - not_null
+      - name: doctor_id
+        description: "Clave foránea del doctor"
+        tests:
+          - not_null
+      - name: total_amount
+        description: "Importe total bruto"
+        tests:
+          - not_null
+      - name: revenue_source
+        description: "Segmentación de ingresos: Seguro o Directo"
+        tests:
+          - accepted_values:
+              values: ['Insurance', 'Direct']
+
+  - name: gold_medical_performance
+    description: "Capa final analítica operativa de citas"
+    columns:
+      - name: appointment_id
+        description: "Clave primaria de la cita"
+        tests:
+          - unique
+          - not_null
+      - name: status
+        description: "Estado de la cita"
+        tests:
+          - not_null
+      - name: year
+        description: "Año de la cita para particionamiento analítico"
+        tests:
+          - not_null
