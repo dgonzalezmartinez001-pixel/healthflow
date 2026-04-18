@@ -7,7 +7,7 @@ with source as (
 
 final as (
     select
-        treatment_code,
+        treatment_id,
         treatment_name,
         specialty,
         base_price,
