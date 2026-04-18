@@ -1,7 +1,7 @@
 {{ config(materialized='table') }}
 
 select
-    treatment_code,
+    treatment_id,
     treatment_name,
     specialty,
     base_price,
