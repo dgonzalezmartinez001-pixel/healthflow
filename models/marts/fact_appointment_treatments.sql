@@ -3,7 +3,7 @@
 select
     apt_t.appointment_treatment_id,
     apt_t.appointment_id,
-    apt_t.treatment_code,
+    apt_t.treatment_id,
     a.patient_id,
     a.doctor_id,
     a.clinic_id,
