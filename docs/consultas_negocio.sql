@@ -174,18 +174,14 @@ INTERPRETACIÓN:
 -- =============================================================================
 
 SELECT
-    appointment_type,
-    COUNT(appointment_id)                           AS total_appointments,
-    COUNT(CASE WHEN LOWER(status)='completed' 
-               THEN 1 END)                          AS completed,
-    ROUND(
-        100.0 * COUNT(CASE WHEN LOWER(status)='completed' THEN 1 END)
-        / NULLIF(COUNT(appointment_id), 0),
-        1
-    )                                               AS completion_rate_pct
-FROM gold_medical_performance
-GROUP BY appointment_type
-ORDER BY total_appointments DESC
+    dt.treatment_name,
+    COUNT(fat.appointment_treatment_id)             AS frequency,
+    ROUND(SUM(fat.actual_price), 2)                AS total_billed,
+    ROUND(AVG(fat.actual_price), 2)                AS avg_price
+FROM main_marts.fact_appointment_treatments fat
+JOIN main_marts.dim_treatment dt ON fat.treatment_code = dt.treatment_code
+GROUP BY dt.treatment_name
+ORDER BY frequency DESC
 LIMIT 5;
 
 /*

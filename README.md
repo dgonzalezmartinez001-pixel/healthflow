@@ -21,11 +21,16 @@ El proyecto sigue una arquitectura de capas diseñada para garantizar la calidad
 
 ## 📋 Ejecución del Proyecto
 
-Asegúrate de tener instaladas las dependencias:
-
+#### Opción A: Usando `uv` (Recomendado)
 ```bash
 # Sincronizar entorno virtual
 uv sync
+```
+
+#### Opción B: Usando `pip`
+Si no dispones de `uv`, puedes instalar las dependencias directamente:
+```bash
+pip install dbt-duckdb duckdb pyspark pandas faker numpy
 ```
 
 ### 1. Ingesta de Datos
@@ -41,10 +46,10 @@ Materializa todas las capas de datos:
 
 ```bash
 # Compilar y ejecutar modelos
-uv run dbt run
+uv run dbt run --profiles-dir .
 
 # Ejecutar tests de calidad
-uv run dbt test
+uv run dbt test --profiles-dir .
 ```
 
 ### 3. Cálculo de KPIs (PySpark)

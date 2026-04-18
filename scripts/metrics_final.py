@@ -63,13 +63,14 @@ def main():
     kpi2.show(10, truncate=False)
 
     print("\n" + "="*60)
-    print(" KPI 3: Coste medio por factura según especialidad")
+    print(" KPI 3: Coste medio por tratamiento según especialidad")
     print("="*60)
-    # Unión de modelos para cruzar dimensiones
-    kpi3 = df_medical.join(df_finance, ["clinic_name", "doctor_name", "year", "month"]) \
+    # Usamos la tabla de hechos de tratamientos para evitar inflación por JOINs financieros
+    kpi3 = df_treatments.join(df_medical, "appointment_id") \
         .groupBy("doctor_specialty") \
-        .agg(F.avg("total_amount").alias("avg_cost")) \
-        .orderBy(F.desc("avg_cost"))
+        .agg(F.avg("actual_price").alias("avg_treatment_cost"),
+             F.sum("actual_price").alias("total_specialty_revenue")) \
+        .orderBy(F.desc("avg_treatment_cost"))
     kpi3.show(truncate=False)
 
     print("\n" + "="*60)
